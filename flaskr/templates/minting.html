@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="static/js/shared/abi/erc721.js"></script>
+    <script src="static/js/shared/abi/token.js"></script>
+    <script src="static/js/shared/abi/simpleMarketplace.js"></script>
+    <script src="static/js/shared/abi/auction.js"></script>
+    <script src="static/js/shared/addresses.js"></script>
+    <script src="static/js/shared/wallet.js"></script>
+    <script src="static/js/shared/functions.js"></script>
+    <script src="static/js/shared/connect.js"></script>
+    <title>Mini Monkey Mafia</title>
+    <link rel="stylesheet" href="../static/css/minting.css">
+</head>
+<body>
+    <main>
+        <a href="#" class="connect" onclick="connect()">CONNECT TO METAMASK</a>
+        <div class="image-container">
+            <img src="../static/assets/monke4.png" alt="" id="image-target">
+        </div>
+
+        <p id="adopted"></p>
+        <input style="width: 180px; height: 30px; margin-bottom: 20px; border-radius: 10px; text-align: center; border-color: white; color: black; font-size: 16px" type="number" max="10" min="1" name="count" id="count" min='1' value="5" onkeyup="updateValue()">
+
+        <a href="#" class="cta" onclick="mint()">ADOPT!</a>
+        <p class="description">You can adopt a minimum of 1 and maximum of 10 Mini Monkeys. Each Monkey costs 0.02 ETH + gas. <br/><br/>You've reached the final threshold - we can't wait to welcome you to the mafia.</p>
+    </main>
+    <script>
+        const paths = [
+            "../static/assets/monke1.png",
+            "../static/assets/monke5.png",
+            "../static/assets/monke4.png",
+            "../static/assets/monke2.png",
+            "../static/assets/monke3.png"
+        ]
+        var state = 0;
+
+        setInterval(() => {
+            console.log(state)
+            state += 1;
+            if(state == paths.length){
+                state = 0
+            };
+            document.querySelector('#image-target').src = paths[state]
+
+
+        },500)
+
+
+    </script>
+    <script src="static/js/minting.js"></script>
+</body>
+</html>

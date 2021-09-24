@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;800&display=swap');
+body{
+    margin: 0;
+    background: #212121;
+    color: white;
+    background-image: url('../assets/banner.jpeg');
+    background-repeat: repeat;
+    background-size: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body>div{
+    background: rgba(0,0,0,.35);
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.link{
+    color: orange;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 12px 32px;
+    background: #D1F9B2;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto;
+    display: block;
+    height: max-content;
+    margin-top: 48px;
+}
+
+.container{
+    width: 872px;
+    margin: 0 auto 24px;
+}
+
+
+
+.hero>div>p:first-of-type{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.hero h1{
+    font-size: 6rem;
+    margin-bottom: 0;
+    line-height: 5.5rem;
+}
+
+.button2{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.hero .row{
+    align-items: unset;
+}
+
+.arrows img{
+    transform: scale(0.6);
+    display: block;
+    cursor: pointer;
+}
+
+.arrows img:last-of-type{
+    transform: scale(0.6) rotate(180deg);
+}
+
+.troll-image{
+    height: 144px;
+    object-fit: contain;
+    margin: 0 auto 0 16px;
+}
+
+#count{
+    font-size: 32px;
+    padding: 8px 16px;
+    background: white;
+    color: black;
+    margin: 0 16px;
+}
+
+.mint{
+    padding: 16px 24px;
+    background: #01ECA3;
+    display: flex;
+    align-items: center;
+}
+.mint p{
+    margin: 0;
+    user-select: none;
+    font-weight: bold;
+    margin-right: 16px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.follow p{
+    font-size: 32px;
+    margin: 0 0 64px;
+}
+
+.follow div{
+    display: flex;
+    align-items: center;
+}
+
+.follow img{
+    height: 48px;
+    object-fit: contain;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+    display: block;
+}
+.follow img:last-of-type{
+    padding: 14px 8px;
+}
+
+.follow img:hover{
+    background: #000;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 1240px){
+    .hero h1{
+        margin-right: 16px;
+    }
+    .container{
+        width: 72%;
+    }
+    body>div{
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .troll-image{
+        margin-right: 24px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .link{
+        margin: 24px 0;
+        width: max-content;
+    }
+    .container{
+        width: 85%;
+    }
+    .mint{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px){
+
+    .mint{
+        margin-top: 16px;
+
+    }
+    .hero h1{
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .hero .row{
+        flex-direction: column-reverse;
+    }
+    .link{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    body{
+        background-size: 100%;
+    }
+}

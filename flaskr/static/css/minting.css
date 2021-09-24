@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Syne', 'Roboto','Segoe UI', sans-serif, -apple-system, Oxygen;
+    /* background: linear-gradient(180deg, #3A6351, #14221c);
+    background: linear-gradient(180deg, #007965, #003d33); */
+    background: linear-gradient(180deg, #29ab87, #0e3c2f);
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    color: white;
+}
+
+.cta{
+    padding: 24px 110px;
+    border: 1px solid white;
+    font-size: 24px;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+    margin-bottom: 32px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.connect{
+    padding: 10px;
+    width: 275px;
+    border: 1px solid white;
+    font-size: 16px;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+    margin-bottom: 32px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.connect:hover{
+    background: white;
+    color: black;
+}
+
+.cta:hover{
+    background: white;
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+
+
+    text-align: center;
+}
+
+.description{
+    width: 750px;
+    margin: 16px auto 24px;
+}
+
+.image-container img{
+    width: 300px;
+    object-fit: contain;
+    background: white;
+    margin-bottom: 0px;
+    border-radius: 20px;
+}
