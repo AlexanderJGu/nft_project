@@ -6,9 +6,12 @@ from flask import current_app as app
 from flask import Flask, Response, request, render_template, redirect, url_for, Blueprint, jsonify
 from flaskr.config import *
 import traceback
+from flask_cors import CORS
+
 print("nft_address: ", nft_address)
 
 bp = Blueprint('app', __name__)
+CORS(bp)
 
 @bp.route('/', methods=['GET', 'POST'])
 def index():
